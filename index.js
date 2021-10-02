@@ -6,19 +6,26 @@ var score=0
 
 function play(question,answer){
 var userAnswer=readLineSync.question(question)
-if(userAnswer===answer)
+if(userAnswer.toLowerCase()===answer.toLowerCase())
 {
+  console.log("right")
 score++
 }
-else{}
+else{
+  console.log("wrong")
+}
+console.log("current score:",score)
+console.log("--------------")
 }
 var questions=[{
-  question:"where do u live",
+  question:"where do rishabh live",
   answer:"bangalore"
-},{question:"which college  do u study",
-  answer:"bangalore"},
-  {question:"where do u live",
-  answer:"bangalore"}
+},{question:"which college  do rishabh study",
+  answer:"jssateb"},
+  {question:"what is rishabh's favourite sports",
+  answer:"cricket"},
+   {question:"what is rishabh's favourite programming language",
+  answer:"javascript"},
 ]
 for(var i=0;i<questions.length;i++){
   var currentQuestion=questions[i]
