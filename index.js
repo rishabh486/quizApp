@@ -26,6 +26,8 @@ var questions=[{
   answer:"cricket"},
    {question:"what is rishabh's favourite programming language",
   answer:"javascript"},
+  {question:"who is rishabh favouite cricketer",
+  answer:"michael clarke"}
 ]
 for(var i=0;i<questions.length;i++){
   var currentQuestion=questions[i]
